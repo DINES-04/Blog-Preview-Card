@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray500: hsl(0, 0%, 42%);
+    --gray950: hsl(0, 0%, 7%);
+}
+body{
+    font-family: 'Figtree',sans-serif;
+    Font-size: 16px;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0%;
+}
+.outercontainer{
+    box-sizing: border-box;
+    border: 2px solid black;
+    max-width: 80%; 
+    max-height: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: .5rem .5rem var(--gray950);
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.para h4{
+    font-size: 1rem; 
+    background-color: var(--yellow);
+    padding: .2rem;
+    text-align: center;
+    width: 5rem;
+    border-radius: .3rem;
+}
+#publish{
+   color: var(--gray950);
+}
+#lang{
+    font-size: 1.3rem;
+}
+#para1{
+    color: var(--gray500);
+}
+.img{
+    border-radius: 50%;
+    height: 2rem;
+    width: auto;/**/
+    /* object-fit: cover; */
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+   
+}
+footer h2{
+    font-size: 0.8rem;
+  
+}
+#lang:hover{
+    color: var(--yellow);
+    transition: color 1s ease-in-out;
+}
+@media (min-width:707px) {
+    .outercontainer{
+        max-width: 25%;
+        max-height: 80%;
+    }
+}
+@media (max-width:707px) {
+    #para1{
+        font-size: .8rem;
+    }
+}
+
